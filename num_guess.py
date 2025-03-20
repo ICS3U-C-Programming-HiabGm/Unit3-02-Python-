@@ -1,18 +1,20 @@
 # Created by: Hiab G
 # Date: Wed, Feb. 28th
-# This program checks if there are the correct number of students (4) is correct
+# This program checks if there are the correct number of students (555) is correct
 import constants_num
 
 
 def main():
-    # get nummber of students
-    number_of_students = int(input("Enter the number of students: "))
+    # get number of students
+    correct_number = int(input("Guess the number of students between 55-590: "))
     print("")
     # check if number if there are too many students
-    if number_of_students > constants_num.MAX_Students:
-        print("Too many students!")
+    if correct_number != constants_num.RIGHT_number:
+        print("Wrong!")
+        
+   
 # check if number if there are correct number of students
-    if number_of_students == constants_num.MAX_Students:
+    if correct_number == constants_num.RIGHT_number:
         print("Correct!")
 
 
